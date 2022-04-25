@@ -1,0 +1,4 @@
+com\denysmamani\operacionesrmi\ClienteOperaciones.class
+com\denysmamani\operacionesrmi\IOperaciones.class
+com\denysmamani\operacionesrmi\OperacionesRMI.class
+com\denysmamani\operacionesrmi\ServidorOperaciones.class
