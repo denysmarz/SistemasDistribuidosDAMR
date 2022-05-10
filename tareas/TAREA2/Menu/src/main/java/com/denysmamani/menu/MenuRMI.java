@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.denysmamani.laboratorio1.mamanidenys;
+package com.denysmamani.menu;
 
 import java.net.MalformedURLException;
 import java.rmi.AlreadyBoundException;
@@ -16,11 +16,11 @@ import java.util.logging.Logger;
  *
  * @author DENYS XD
  */
-public class RMIServ {
-    public static void main(String[] args){
+public class MenuRMI {
+   public static void main(String[] args){
          
          try {
-             ServidorBanco server=new ServidorBanco();
+             ServidorOperaciones server=new ServidorOperaciones();
          
              LocateRegistry.createRegistry(1099); //levantar el servidor de registro;
              Naming.bind("Operaciones",server);
@@ -28,11 +28,11 @@ public class RMIServ {
              
              
          } catch (RemoteException ex) {
-             Logger.getLogger(RMIServ.class.getName()).log(Level.SEVERE, null, ex);
+             Logger.getLogger(MenuRMI.class.getName()).log(Level.SEVERE, null, ex);
          } catch (AlreadyBoundException ex) {
-             Logger.getLogger(RMIServ.class.getName()).log(Level.SEVERE, null, ex);
+             Logger.getLogger(MenuRMI.class.getName()).log(Level.SEVERE, null, ex);
          } catch (MalformedURLException ex) {
-             Logger.getLogger(RMIServ.class.getName()).log(Level.SEVERE, null, ex);
+             Logger.getLogger(MenuRMI.class.getName()).log(Level.SEVERE, null, ex);
          }
          
          

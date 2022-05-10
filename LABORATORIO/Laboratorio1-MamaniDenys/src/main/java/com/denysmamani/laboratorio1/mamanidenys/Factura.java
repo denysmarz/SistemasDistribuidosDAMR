@@ -12,17 +12,14 @@ import java.io.Serializable;
  */
 
 class Factura implements Serializable{
-    private enum Mes {Enero,Febrero,Marzo,Abril,Mayo,Junio,Julio,Agosto,Septiembre,Octubre,Noviembre,Diciembre};
-    private Empresa emprsa;
-    private int idfactura;
+     enum Mes {Enero,Febrero,Marzo,Abril,Mayo,Junio,Julio,Agosto,Septiembre,Octubre,Noviembre,Diciembre};
+     Empresa emprsa;
+     int idfactura;
     //Mes mes;
-    private int año;
-    private double monto;
+     int año;
+     double monto;
     
-    String[] cessa1 = new String[5];
-    String[] cessa2 = new String[5];
-    String[] cessa3 = new String[5];
-    String[] cessa4 = new String[5];
     
-    String[] cessa1 = {1,154,Mes.Diciembre,2021,150};
+    
+    String[] cessa1 = {"1","154","Mes.Diciembre","2021","150"};
 }
