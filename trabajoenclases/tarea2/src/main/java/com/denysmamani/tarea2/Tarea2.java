@@ -1,9 +1,9 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
  */
-package com.denysmamani.tarea1;
+
+package com.denysmamani.tarea2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,8 +12,11 @@ import java.io.PrintStream;
 import java.net.Socket;
 import java.util.Scanner;
 
-
-public class Clientesumatoria {
+/**
+ *
+ * @author DENYS XD
+ */
+public class Tarea2 {
 
     public static void main(String[] args) {
         int port = 5002;
@@ -21,17 +24,17 @@ public class Clientesumatoria {
             Socket client = new Socket("localhost", port); 
             PrintStream toServer = new PrintStream(client.getOutputStream());
             BufferedReader fromServer = new BufferedReader(new InputStreamReader(client.getInputStream()));
-            System.out.println("INtroducir un numero:");
-            Scanner llamada = new Scanner(System.in);
-            int numero = llamada.nextInt();
-            
-            toServer.println(numero);
+             Scanner sc=new Scanner(System.in);
+             System.out.print("Introduzca un numero: ");
+             int x=sc.nextInt();
+             
+             
+            toServer.println(x);
             String result = fromServer.readLine();  
-            System.out.println("La sumatoria es: " + result);
+            System.out.println("cadena devuelta es: " + result);
 
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
-
     }
 }

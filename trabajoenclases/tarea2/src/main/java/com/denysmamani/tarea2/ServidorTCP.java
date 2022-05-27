@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.denysmamani.tarea1;
+package com.denysmamani.tarea2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,13 +12,14 @@ import java.io.PrintStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-
-public class Servidorsumatoria {
+/**
+ *
+ * @author Carlos
+ */
+public class ServidorTCP {
 
     public static void main(String[] args) {
         int port = 5002; 
-        do{
-            
               
         try {
             ServerSocket server = new ServerSocket(port);
@@ -29,23 +30,27 @@ public class Servidorsumatoria {
             BufferedReader fromClient = new BufferedReader(new InputStreamReader(client.getInputStream())); // el lector
             System.out.println("Cliente se conecto");
             
-            String cadena = fromClient.readLine();
-            System.out.println(cadena);
-            int sum = sumatoria(Integer.parseInt(cadena));
-            toClient = new PrintStream(client.getOutputStream()); 
-            toClient.println(sum);
-         
+            toClient = new PrintStream(client.getOutputStream());
+            int numero = Integer.parseInt(fromClient.readLine());
+            
+            int cont = numero;
+            int suma=0;
+            while (cont != 0) {		   
+            suma = suma + cont;
+            cont--;	 
+            }
+
+             toClient.println("La sumatoria es: "+suma);
+            
+            
+            System.out.println(numero);
+             
+           // toClient.println("Hola Mundo");
+            System.out.println("Cliente se conecto");
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
-        }while(true);
+
       
-    }
-    public static int sumatoria(int n){
-       int sumatoria = 0;
-       for(int i = 1;i<=n;i++){
-           sumatoria+=i;
-       }
-       return sumatoria;
     }
 }
