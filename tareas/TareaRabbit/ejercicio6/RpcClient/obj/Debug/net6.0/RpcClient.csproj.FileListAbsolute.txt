@@ -1,0 +1,17 @@
+C:\Users\DENYS XD\Desktop\ejercicio6\RpcClient\bin\Debug\net6.0\RpcClient.exe
+C:\Users\DENYS XD\Desktop\ejercicio6\RpcClient\bin\Debug\net6.0\RpcClient.deps.json
+C:\Users\DENYS XD\Desktop\ejercicio6\RpcClient\bin\Debug\net6.0\RpcClient.runtimeconfig.json
+C:\Users\DENYS XD\Desktop\ejercicio6\RpcClient\bin\Debug\net6.0\RpcClient.dll
+C:\Users\DENYS XD\Desktop\ejercicio6\RpcClient\bin\Debug\net6.0\RpcClient.pdb
+C:\Users\DENYS XD\Desktop\ejercicio6\RpcClient\bin\Debug\net6.0\RabbitMQ.Client.dll
+C:\Users\DENYS XD\Desktop\ejercicio6\RpcClient\obj\Debug\net6.0\RpcClient.csproj.AssemblyReference.cache
+C:\Users\DENYS XD\Desktop\ejercicio6\RpcClient\obj\Debug\net6.0\RpcClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DENYS XD\Desktop\ejercicio6\RpcClient\obj\Debug\net6.0\RpcClient.AssemblyInfoInputs.cache
+C:\Users\DENYS XD\Desktop\ejercicio6\RpcClient\obj\Debug\net6.0\RpcClient.AssemblyInfo.cs
+C:\Users\DENYS XD\Desktop\ejercicio6\RpcClient\obj\Debug\net6.0\RpcClient.csproj.CoreCompileInputs.cache
+C:\Users\DENYS XD\Desktop\ejercicio6\RpcClient\obj\Debug\net6.0\RpcClient.csproj.CopyComplete
+C:\Users\DENYS XD\Desktop\ejercicio6\RpcClient\obj\Debug\net6.0\RpcClient.dll
+C:\Users\DENYS XD\Desktop\ejercicio6\RpcClient\obj\Debug\net6.0\refint\RpcClient.dll
+C:\Users\DENYS XD\Desktop\ejercicio6\RpcClient\obj\Debug\net6.0\RpcClient.pdb
+C:\Users\DENYS XD\Desktop\ejercicio6\RpcClient\obj\Debug\net6.0\RpcClient.genruntimeconfig.cache
+C:\Users\DENYS XD\Desktop\ejercicio6\RpcClient\obj\Debug\net6.0\ref\RpcClient.dll

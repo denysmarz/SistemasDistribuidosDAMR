@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "VAwG0q2i6VHHPogX7Svi9pm6xvtFzaLPDl5/yxN61AatX9a9YOqhQDtF+o7SCjO6k0KMsbzsjbXqeUrV5T5NVw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\DENYS XD\\Desktop\\ejercicio6\\RpcClient\\RpcClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DENYS XD\\.nuget\\packages\\rabbitmq.client\\6.3.0\\rabbitmq.client.6.3.0.nupkg.sha512",
+    "C:\\Users\\DENYS XD\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\DENYS XD\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
