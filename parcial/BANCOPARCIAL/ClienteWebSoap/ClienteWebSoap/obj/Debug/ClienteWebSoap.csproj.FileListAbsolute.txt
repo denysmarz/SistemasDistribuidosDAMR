@@ -1,0 +1,11 @@
+C:\xampp\htdocs\SistemasDistribuidosDAMR\LABORATORIO\SOAP\ClienteWebSoap\ClienteWebSoap\bin\Debug\ClienteWebSoap.exe.config
+C:\xampp\htdocs\SistemasDistribuidosDAMR\LABORATORIO\SOAP\ClienteWebSoap\ClienteWebSoap\bin\Debug\ClienteWebSoap.exe
+C:\xampp\htdocs\SistemasDistribuidosDAMR\LABORATORIO\SOAP\ClienteWebSoap\ClienteWebSoap\bin\Debug\ClienteWebSoap.pdb
+C:\xampp\htdocs\SistemasDistribuidosDAMR\LABORATORIO\SOAP\ClienteWebSoap\ClienteWebSoap\obj\Debug\ClienteWebSoap.csproj.AssemblyReference.cache
+C:\xampp\htdocs\SistemasDistribuidosDAMR\LABORATORIO\SOAP\ClienteWebSoap\ClienteWebSoap\obj\Debug\ClienteWebSoap.csproj.SuggestedBindingRedirects.cache
+C:\xampp\htdocs\SistemasDistribuidosDAMR\LABORATORIO\SOAP\ClienteWebSoap\ClienteWebSoap\obj\Debug\ClienteWebSoap.Form1.resources
+C:\xampp\htdocs\SistemasDistribuidosDAMR\LABORATORIO\SOAP\ClienteWebSoap\ClienteWebSoap\obj\Debug\ClienteWebSoap.Properties.Resources.resources
+C:\xampp\htdocs\SistemasDistribuidosDAMR\LABORATORIO\SOAP\ClienteWebSoap\ClienteWebSoap\obj\Debug\ClienteWebSoap.csproj.GenerateResource.cache
+C:\xampp\htdocs\SistemasDistribuidosDAMR\LABORATORIO\SOAP\ClienteWebSoap\ClienteWebSoap\obj\Debug\ClienteWebSoap.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\SistemasDistribuidosDAMR\LABORATORIO\SOAP\ClienteWebSoap\ClienteWebSoap\obj\Debug\ClienteWebSoap.exe
+C:\xampp\htdocs\SistemasDistribuidosDAMR\LABORATORIO\SOAP\ClienteWebSoap\ClienteWebSoap\obj\Debug\ClienteWebSoap.pdb

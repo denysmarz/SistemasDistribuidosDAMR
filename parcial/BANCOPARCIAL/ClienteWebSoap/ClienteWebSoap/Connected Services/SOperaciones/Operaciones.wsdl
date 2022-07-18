@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerDatos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CI" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerDatosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerDatosResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerCertificadoNacimiento">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CI" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerCertificadoNacimientoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerCertificadoNacimientoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerCertificadoMatrimonio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CI" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerCertificadoMatrimonioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerCertificadoMatrimonioResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerCertificadoDefuncion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CI" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerCertificadoDefuncionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerCertificadoDefuncionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerDatosSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerDatos" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerDatosSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerDatosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCertificadoNacimientoSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerCertificadoNacimiento" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCertificadoNacimientoSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerCertificadoNacimientoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCertificadoMatrimonioSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerCertificadoMatrimonio" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCertificadoMatrimonioSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerCertificadoMatrimonioResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCertificadoDefuncionSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerCertificadoDefuncion" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCertificadoDefuncionSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerCertificadoDefuncionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="OperacionesSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDatos">
+      <wsdl:input message="tns:ObtenerDatosSoapIn" />
+      <wsdl:output message="tns:ObtenerDatosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCertificadoNacimiento">
+      <wsdl:input message="tns:ObtenerCertificadoNacimientoSoapIn" />
+      <wsdl:output message="tns:ObtenerCertificadoNacimientoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCertificadoMatrimonio">
+      <wsdl:input message="tns:ObtenerCertificadoMatrimonioSoapIn" />
+      <wsdl:output message="tns:ObtenerCertificadoMatrimonioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCertificadoDefuncion">
+      <wsdl:input message="tns:ObtenerCertificadoDefuncionSoapIn" />
+      <wsdl:output message="tns:ObtenerCertificadoDefuncionSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="OperacionesSoap" type="tns:OperacionesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDatos">
+      <soap:operation soapAction="http://tempuri.org/ObtenerDatos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCertificadoNacimiento">
+      <soap:operation soapAction="http://tempuri.org/ObtenerCertificadoNacimiento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCertificadoMatrimonio">
+      <soap:operation soapAction="http://tempuri.org/ObtenerCertificadoMatrimonio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCertificadoDefuncion">
+      <soap:operation soapAction="http://tempuri.org/ObtenerCertificadoDefuncion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="OperacionesSoap12" type="tns:OperacionesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDatos">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerDatos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCertificadoNacimiento">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerCertificadoNacimiento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCertificadoMatrimonio">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerCertificadoMatrimonio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCertificadoDefuncion">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerCertificadoDefuncion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Operaciones">
+    <wsdl:port name="OperacionesSoap" binding="tns:OperacionesSoap">
+      <soap:address location="https://localhost:44337/Operaciones.asmx" />
+    </wsdl:port>
+    <wsdl:port name="OperacionesSoap12" binding="tns:OperacionesSoap12">
+      <soap12:address location="https://localhost:44337/Operaciones.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
